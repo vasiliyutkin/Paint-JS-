@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#toolbar {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+.radcontrol {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #c55;
+  text-align: center;
+  padding: 6px;
+  margin-left: 8px;
+  transition: width .4s, height .4s;
+}
+.radcontrol:hover {
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  color: #333;
+}
+
+#rad {
+  font-weight: bold;
+  float: left;
+}
+
+#colors {
+  float: right;
+}
+
+.swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 2px 2px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.swatch.active {
+  border: 4px dashed #fafafa;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#save {
+  height: 30px;
+  padding: 8px;
+  background-color: #c55;
+  color: #fff;
+  float: right;
+  margin-right: 20px;
+}
+
+#save:hover {
+  background-color: #a22e57;
+  font-weight: bolder;
+  cursor: pointer;
+}
